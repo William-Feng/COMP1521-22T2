@@ -1,0 +1,30 @@
+Address       Data Definition
+0x10010000    aa:  .word 42
+0x10010004    bb:  .word 666
+0x10010008    cc:  .word 1
+0x1001000C         .word 3
+0x10010010         .word 5
+0x10010014         .word 7
+
+a)  $t0 = 0x10010000
+
+b)  $t0 = 666
+
+c)  $t0 = Depends on the machine (details provided later)
+
+d)  $t0 = 666
+
+e)  $t1 = 0x10010008
+    $t0 = 1
+        lw   $t0, cc
+
+f)  $t1 = 0x10010008
+    $t0 = 5
+        lw   $t0, cc+8
+
+g)  $t1 = 8
+    $t0 = 5 (find the integer at 0x10010010)
+    
+h)  $t1 = 0x10010008 
+    $t0 attempts to goto 0x1001000A (address not a multiple of 4)
+    Memory alignment error
