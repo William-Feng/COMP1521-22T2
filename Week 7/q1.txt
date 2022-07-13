@@ -1,0 +1,14 @@
+16 bit integer (signed)
+2^16 possibilities BUT
+Remember that these are both positive and negative
+Maximum possible positive value that you can represent is 2^15 - 1 = 32767
+(don't forget about the 0)
+Range: -32768 ~ 32767
+
+Change everything to unsigned
+30000u + 30000u
+
+For a 16 bit integer, you have the very first bit representing the 'sign'
+X___ ____ ____ ____
+If the first bit is 1: negative
+If the first bit is 0: positive

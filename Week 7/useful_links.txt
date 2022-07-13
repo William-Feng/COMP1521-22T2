@@ -1,0 +1,3 @@
+https://docs.google.com/spreadsheets/d/1Sf8U_3197HNtd-399DcJiLHrb7N_ZJn5X0rWq5uHl8M/edit#gid=0
+https://www.h-schmidt.net/FloatConverter/IEEE754.html
+https://evanw.github.io/float-toy/
